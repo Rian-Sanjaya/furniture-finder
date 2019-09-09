@@ -65,7 +65,7 @@ class DropdownCheck extends React.Component {
             return (
               <div 
                 key={i} 
-                style={{ display: 'flex', padding: '10px 10px' }} 
+                style={{ display: 'flex', padding: '10px 10px', cursor: 'default' }} 
                 onClick={ (e) => {
                   e.stopPropagation()
                   // this.props.onHandleClick(item) 
@@ -82,7 +82,7 @@ class DropdownCheck extends React.Component {
                     e.stopPropagation()
                     onHandleClick(item)
                   }} 
-                  style={{ width: 20, height: 20 }}
+                  style={{ width: 20, height: 20, cursor: 'pointer' }}
                 />
               </div>
             )
